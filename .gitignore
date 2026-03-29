@@ -1,0 +1,8 @@
+d:/Athryan/SKM/node_modules
+d:/Athryan/SKM/.next
+d:/Athryan/SKM/out
+*.log
+.env*.local
+.vercel
+.DS_Store
+*.pem
