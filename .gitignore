@@ -6,3 +6,4 @@ d:/Athryan/SKM/out
 .vercel
 .DS_Store
 *.pem
+node_modules

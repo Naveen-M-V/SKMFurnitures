@@ -1,37 +1,52 @@
 'use client'
 
-import { Award, DollarSign, Palette, Truck, Shield, Users } from 'lucide-react'
+import { TreePine, Sparkles, Truck, Wrench, CreditCard, Award, IndianRupee, Users, Clock } from 'lucide-react'
 
 const features = [
   {
-    icon: Award,
-    title: 'Premium Quality Materials',
-    description: 'We use only the finest solid wood, premium fabrics, and durable hardware for furniture that lasts generations.',
+    icon: TreePine,
+    title: 'Durable Materials',
+    description: 'Genuine teak, rosewood & sheesham sourced from trusted plantations',
   },
   {
-    icon: DollarSign,
-    title: 'Affordable Pricing',
-    description: 'Direct-from-manufacturer pricing ensures you get luxury quality without the luxury markup.',
-  },
-  {
-    icon: Palette,
-    title: 'Custom Designs',
-    description: 'Have a unique vision? Our craftsmen can create bespoke pieces tailored to your exact specifications.',
+    icon: Sparkles,
+    title: 'Elegant Designs',
+    description: 'Traditional carved patterns meet sleek contemporary aesthetics',
   },
   {
     icon: Truck,
-    title: 'Free Delivery',
-    description: 'Complimentary delivery and professional assembly within city limits on all orders above ₹25,000.',
+    title: 'Doorstep Delivery',
+    description: 'Free delivery & installation across Tirunelveli district',
   },
   {
-    icon: Shield,
-    title: 'Warranty Support',
-    description: 'Every piece comes with a comprehensive 5-year warranty and lifetime service support.',
+    icon: Wrench,
+    title: 'After-Sales Support',
+    description: 'Dedicated service team for repairs, polishing & maintenance',
+  },
+  {
+    icon: CreditCard,
+    title: 'Budget-Friendly',
+    description: 'Flexible EMI plans with 0% interest on select products',
+  },
+  {
+    icon: Award,
+    title: 'Premium Quality',
+    description: 'Handpicked teak & rosewood with 10-year durability guarantee',
+  },
+  {
+    icon: IndianRupee,
+    title: 'Affordable Pricing',
+    description: 'Factory-direct prices with easy EMI options for every family',
   },
   {
     icon: Users,
-    title: 'Trusted by Customers',
-    description: 'Over 50,000 happy families have trusted SKM Furniture for their dream homes.',
+    title: 'Customer Satisfaction',
+    description: '10,000+ happy families across Tirunelveli trust us',
+  },
+  {
+    icon: Clock,
+    title: '25+ Years Legacy',
+    description: 'Serving Tamil Nadu families with pride since 1998',
   },
 ]
 
@@ -41,18 +56,16 @@ export default function WhyChooseUsSection() {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
+          <p className="text-skm-gold text-lg font-semibold mb-2">Our Promise</p>
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
-            Why Choose SKM Furniture?
+            Why Choose SKM Furniture World
           </h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            We combine traditional craftsmanship with modern design to deliver furniture that exceeds expectations
-          </p>
           <div className="w-24 h-1 bg-skm-gold mx-auto mt-6" />
         </div>
 
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
+          {features.map((feature) => (
             <div
               key={feature.title}
               className="group bg-white/10 backdrop-blur-sm rounded-xl p-8 hover:bg-white/20 transition-all duration-300 border border-white/20"
@@ -66,23 +79,6 @@ export default function WhyChooseUsSection() {
               <p className="text-gray-300 leading-relaxed">
                 {feature.description}
               </p>
-            </div>
-          ))}
-        </div>
-
-        {/* Stats Row */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
-          {[
-            { number: '15+', label: 'Years Experience' },
-            { number: '50K+', label: 'Happy Customers' },
-            { number: '200+', label: 'Designs Available' },
-            { number: '5', label: 'Showroom Locations' },
-          ].map((stat, index) => (
-            <div key={stat.label} className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-skm-gold mb-2">
-                {stat.number}
-              </div>
-              <div className="text-gray-300">{stat.label}</div>
             </div>
           ))}
         </div>
