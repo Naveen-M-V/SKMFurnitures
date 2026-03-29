@@ -125,7 +125,7 @@ export default function ReviewsManager() {
   if (loading) {
     return (
       <div className="flex items-center justify-center h-64">
-        <Loader2 className="w-8 h-8 animate-spin text-skm-brown" />
+        <Loader2 className="w-8 h-8 animate-spin text-skm-red" />
       </div>
     )
   }
@@ -134,7 +134,7 @@ export default function ReviewsManager() {
     <div className="space-y-6">
       {/* Add Review Button */}
       <div className="flex justify-between items-center">
-        <h2 className="text-xl font-bold text-skm-brown-dark">Manage Reviews</h2>
+        <h2 className="text-xl font-bold text-skm-red-dark">Manage Reviews</h2>
         <button
           onClick={() => {
             setEditingReview(null)
@@ -163,7 +163,7 @@ export default function ReviewsManager() {
                 type="text"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full px-4 py-2 rounded-lg border-2 border-gray-200 focus:border-skm-gold focus:outline-none"
+                className="w-full px-4 py-2 rounded-lg border-2 border-gray-200 focus:border-skm-red focus:outline-none"
                 required
               />
             </div>
@@ -179,7 +179,7 @@ export default function ReviewsManager() {
                     onClick={() => setFormData({ ...formData, rating: star })}
                     className={`p-1 ${
                       star <= formData.rating
-                        ? 'text-skm-gold'
+                        ? 'text-skm-red'
                         : 'text-gray-300'
                     }`}
                   >
@@ -196,7 +196,7 @@ export default function ReviewsManager() {
                 value={formData.review_text}
                 onChange={(e) => setFormData({ ...formData, review_text: e.target.value })}
                 rows={4}
-                className="w-full px-4 py-2 rounded-lg border-2 border-gray-200 focus:border-skm-gold focus:outline-none resize-none"
+                className="w-full px-4 py-2 rounded-lg border-2 border-gray-200 focus:border-skm-red focus:outline-none resize-none"
                 required
               />
             </div>
@@ -244,7 +244,7 @@ export default function ReviewsManager() {
                         key={i}
                         className={`w-4 h-4 ${
                           i < review.rating
-                            ? 'text-skm-gold fill-skm-gold'
+                            ? 'text-skm-red fill-skm-red'
                             : 'text-gray-300'
                         }`}
                       />

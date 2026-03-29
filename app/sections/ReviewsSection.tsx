@@ -74,19 +74,19 @@ export default function ReviewsSection() {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-skm-brown-dark mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-skm-red-dark mb-4">
             What Our Customers Say
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Real feedback from our valued customers who trust SKM Furniture
           </p>
-          <div className="w-24 h-1 bg-skm-gold mx-auto mt-6" />
+          <div className="w-24 h-1 bg-skm-red mx-auto mt-6" />
         </div>
 
         {/* Reviews Carousel */}
         <div className="relative max-w-4xl mx-auto">
           <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 relative">
-            <Quote className="absolute top-6 left-6 w-12 h-12 text-skm-gold/30" />
+            <Quote className="absolute top-6 left-6 w-12 h-12 text-skm-red/30" />
             
             {displayReviews.length > 0 && (
               <div className="text-center">
@@ -97,7 +97,7 @@ export default function ReviewsSection() {
                       key={i}
                       className={`w-6 h-6 ${
                         i < displayReviews[currentIndex].rating
-                          ? 'text-skm-gold fill-skm-gold'
+                          ? 'text-skm-red fill-skm-red'
                           : 'text-gray-300'
                       }`}
                     />
@@ -110,7 +110,7 @@ export default function ReviewsSection() {
                 </p>
 
                 {/* Reviewer Name */}
-                <h4 className="text-xl font-bold text-skm-brown-dark">
+                <h4 className="text-xl font-bold text-skm-red-dark">
                   {displayReviews[currentIndex].name}
                 </h4>
                 <p className="text-sm text-gray-500 mt-1">Verified Customer</p>
@@ -123,13 +123,13 @@ export default function ReviewsSection() {
             <>
               <button
                 onClick={prevReview}
-                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 p-3 bg-white shadow-lg rounded-full text-skm-brown hover:bg-skm-gold hover:text-white transition-all"
+                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 p-3 bg-white shadow-lg rounded-full text-skm-red hover:bg-skm-red hover:text-white transition-all"
               >
                 <ChevronLeft size={24} />
               </button>
               <button
                 onClick={nextReview}
-                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 p-3 bg-white shadow-lg rounded-full text-skm-brown hover:bg-skm-gold hover:text-white transition-all"
+                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 p-3 bg-white shadow-lg rounded-full text-skm-red hover:bg-skm-red hover:text-white transition-all"
               >
                 <ChevronRight size={24} />
               </button>
@@ -143,7 +143,7 @@ export default function ReviewsSection() {
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 className={`w-3 h-3 rounded-full transition-all ${
-                  index === currentIndex ? 'bg-skm-brown w-8' : 'bg-gray-300'
+                  index === currentIndex ? 'bg-skm-red w-8' : 'bg-gray-300'
                 }`}
               />
             ))}

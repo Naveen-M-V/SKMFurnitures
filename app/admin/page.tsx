@@ -32,10 +32,10 @@ export default function AdminPage() {
 
   if (!isLoggedIn) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-skm-brown to-skm-brown-dark flex items-center justify-center p-4">
+      <div className="min-h-screen bg-gradient-to-br from-skm-red to-skm-red-dark flex items-center justify-center p-4">
         <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md">
           <div className="text-center mb-8">
-            <h1 className="text-2xl font-bold text-skm-brown-dark mb-2">Admin Login</h1>
+            <h1 className="text-2xl font-bold text-skm-red-dark mb-2">Admin Login</h1>
             <p className="text-gray-600">SKM Furniture World CMS</p>
           </div>
 
@@ -48,7 +48,7 @@ export default function AdminPage() {
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-skm-gold focus:outline-none"
+                className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-skm-red focus:outline-none"
                 placeholder="Enter admin password"
               />
             </div>
@@ -72,7 +72,7 @@ export default function AdminPage() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
-      <header className="bg-skm-brown-dark text-white shadow-lg">
+      <header className="bg-skm-red-dark text-white shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <h1 className="text-xl font-bold">SKM Furniture - Admin Panel</h1>
@@ -95,7 +95,7 @@ export default function AdminPage() {
               onClick={() => setActiveTab('hero')}
               className={`flex items-center space-x-2 py-4 border-b-2 transition-colors ${
                 activeTab === 'hero'
-                  ? 'border-skm-gold text-skm-brown'
+                  ? 'border-skm-red text-skm-red'
                   : 'border-transparent text-gray-500 hover:text-gray-700'
               }`}
             >
@@ -106,7 +106,7 @@ export default function AdminPage() {
               onClick={() => setActiveTab('reviews')}
               className={`flex items-center space-x-2 py-4 border-b-2 transition-colors ${
                 activeTab === 'reviews'
-                  ? 'border-skm-gold text-skm-brown'
+                  ? 'border-skm-red text-skm-red'
                   : 'border-transparent text-gray-500 hover:text-gray-700'
               }`}
             >
@@ -117,7 +117,7 @@ export default function AdminPage() {
               onClick={() => setActiveTab('inquiries')}
               className={`flex items-center space-x-2 py-4 border-b-2 transition-colors ${
                 activeTab === 'inquiries'
-                  ? 'border-skm-gold text-skm-brown'
+                  ? 'border-skm-red text-skm-red'
                   : 'border-transparent text-gray-500 hover:text-gray-700'
               }`}
             >

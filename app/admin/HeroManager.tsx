@@ -127,7 +127,7 @@ export default function HeroManager() {
   if (loading) {
     return (
       <div className="flex items-center justify-center h-64">
-        <Loader2 className="w-8 h-8 animate-spin text-skm-brown" />
+        <Loader2 className="w-8 h-8 animate-spin text-skm-red" />
       </div>
     )
   }
@@ -136,11 +136,11 @@ export default function HeroManager() {
     <div className="space-y-6">
       {/* Upload Section */}
       <div className="bg-white rounded-xl shadow-sm p-6">
-        <h2 className="text-xl font-bold text-skm-brown-dark mb-4 flex items-center">
+        <h2 className="text-xl font-bold text-skm-red-dark mb-4 flex items-center">
           <ImageIcon className="w-6 h-6 mr-2" />
           Upload Hero Images
         </h2>
-        <div className="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center hover:border-skm-gold transition-colors">
+        <div className="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center hover:border-skm-red transition-colors">
           <input
             type="file"
             accept="image/*"
@@ -154,7 +154,7 @@ export default function HeroManager() {
             className="cursor-pointer flex flex-col items-center"
           >
             {uploading ? (
-              <Loader2 className="w-12 h-12 text-skm-brown animate-spin mb-4" />
+              <Loader2 className="w-12 h-12 text-skm-red animate-spin mb-4" />
             ) : (
               <Upload className="w-12 h-12 text-gray-400 mb-4" />
             )}
@@ -170,7 +170,7 @@ export default function HeroManager() {
 
       {/* Images Grid */}
       <div className="bg-white rounded-xl shadow-sm p-6">
-        <h2 className="text-xl font-bold text-skm-brown-dark mb-4">Manage Images</h2>
+        <h2 className="text-xl font-bold text-skm-red-dark mb-4">Manage Images</h2>
         
         {images.length === 0 ? (
           <p className="text-gray-500 text-center py-8">No images uploaded yet.</p>

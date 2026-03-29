@@ -78,7 +78,7 @@ export default function InquiriesManager() {
   if (loading) {
     return (
       <div className="flex items-center justify-center h-64">
-        <Loader2 className="w-8 h-8 animate-spin text-skm-brown" />
+        <Loader2 className="w-8 h-8 animate-spin text-skm-red" />
       </div>
     )
   }
@@ -88,7 +88,7 @@ export default function InquiriesManager() {
       {/* Header */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <div>
-          <h2 className="text-xl font-bold text-skm-brown-dark">Customer Inquiries</h2>
+          <h2 className="text-xl font-bold text-skm-red-dark">Customer Inquiries</h2>
           <p className="text-gray-600 text-sm mt-1">
             Total: {inquiries.length} inquiries
           </p>
@@ -97,7 +97,7 @@ export default function InquiriesManager() {
           <select
             value={filter}
             onChange={(e) => setFilter(e.target.value as any)}
-            className="px-4 py-2 border-2 border-gray-200 rounded-lg focus:border-skm-gold focus:outline-none"
+            className="px-4 py-2 border-2 border-gray-200 rounded-lg focus:border-skm-red focus:outline-none"
           >
             <option value="all">All Inquiries</option>
             <option value="new">New</option>
@@ -105,7 +105,7 @@ export default function InquiriesManager() {
           </select>
           <button
             onClick={fetchInquiries}
-            className="p-2 bg-skm-brown text-white rounded-lg hover:bg-skm-brown-dark transition-colors"
+            className="p-2 bg-skm-red text-white rounded-lg hover:bg-skm-red-dark transition-colors"
             title="Refresh"
           >
             <RefreshCw className="w-5 h-5" />
@@ -130,10 +130,10 @@ export default function InquiriesManager() {
                 {/* Inquiry Details */}
                 <div className="flex-1">
                   <div className="flex items-center gap-4 mb-3">
-                    <h3 className="text-lg font-bold text-skm-brown-dark">
+                    <h3 className="text-lg font-bold text-skm-red-dark">
                       {inquiry.name}
                     </h3>
-                    <span className="px-3 py-1 bg-skm-gold/20 text-skm-brown text-xs font-semibold rounded-full">
+                    <span className="px-3 py-1 bg-skm-red/20 text-skm-red text-xs font-semibold rounded-full">
                       New
                     </span>
                   </div>
@@ -143,7 +143,7 @@ export default function InquiriesManager() {
                       <Phone className="w-4 h-4" />
                       <a
                         href={`tel:${inquiry.mobile}`}
-                        className="hover:text-skm-brown transition-colors"
+                        className="hover:text-skm-red transition-colors"
                       >
                         {inquiry.mobile}
                       </a>

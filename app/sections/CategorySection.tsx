@@ -47,13 +47,13 @@ export default function CategorySection() {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-skm-brown-dark mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-skm-red-dark mb-4">
             Our Furniture Categories
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Explore our extensive collection of premium furniture designed to transform every space in your home
           </p>
-          <div className="w-24 h-1 bg-skm-gold mx-auto mt-6" />
+          <div className="w-24 h-1 bg-skm-red mx-auto mt-6" />
         </div>
 
         {/* Categories Grid */}
@@ -65,15 +65,15 @@ export default function CategorySection() {
             >
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-skm-brown rounded-xl flex items-center justify-center group-hover:bg-skm-gold transition-colors duration-300">
+                  <div className="w-16 h-16 bg-skm-red rounded-xl flex items-center justify-center group-hover:bg-skm-red-light transition-colors duration-300">
                     <category.icon className="w-8 h-8 text-white" />
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold text-skm-brown-dark mb-1 group-hover:text-skm-brown transition-colors">
+                  <h3 className="text-xl font-bold text-skm-red-dark mb-1 group-hover:text-skm-red transition-colors">
                     {category.title}
                   </h3>
-                  <p className="text-sm text-skm-gold font-semibold mb-2">
+                  <p className="text-sm text-skm-red font-semibold mb-2">
                     {category.count}
                   </p>
                   <p className="text-gray-600 text-sm leading-relaxed">

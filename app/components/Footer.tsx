@@ -23,7 +23,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-skm-brown-dark text-white">
+    <footer className="bg-skm-red-dark text-white">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -37,7 +37,7 @@ export default function Footer() {
                   className="h-full w-auto object-contain"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
-                    e.currentTarget.parentElement!.innerHTML = '<div class="h-10 w-10 bg-skm-gold rounded flex items-center justify-center text-skm-brown-dark font-bold text-lg">S</div>';
+                    e.currentTarget.parentElement!.innerHTML = '<div class="h-10 w-10 bg-skm-red-light rounded flex items-center justify-center text-skm-red-dark font-bold text-lg">S</div>';
                   }}
                 />
               </div>
@@ -48,25 +48,25 @@ export default function Footer() {
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-skm-gold hover:text-skm-brown-dark transition-all"
+                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-skm-red hover:text-white transition-all"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-skm-gold hover:text-skm-brown-dark transition-all"
+                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-skm-red hover:text-white transition-all"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-skm-gold hover:text-skm-brown-dark transition-all"
+                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-skm-red hover:text-white transition-all"
               >
                 <Twitter className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-skm-gold hover:text-skm-brown-dark transition-all"
+                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-skm-red hover:text-white transition-all"
               >
                 <Youtube className="w-5 h-5" />
               </a>
@@ -75,7 +75,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-6 text-skm-gold">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-6 text-skm-red-light">Quick Links</h4>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.href}>
@@ -92,7 +92,7 @@ export default function Footer() {
 
           {/* Categories */}
           <div>
-            <h4 className="text-lg font-semibold mb-6 text-skm-gold">Categories</h4>
+            <h4 className="text-lg font-semibold mb-6 text-skm-red-light">Categories</h4>
             <ul className="space-y-3">
               {categories.map((category) => (
                 <li key={category}>
@@ -109,16 +109,16 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-6 text-skm-gold">Contact Us</h4>
+            <h4 className="text-lg font-semibold mb-6 text-skm-red-light">Contact Us</h4>
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-skm-gold mt-0.5 flex-shrink-0" />
+                <MapPin className="w-5 h-5 text-skm-red-light mt-0.5 flex-shrink-0" />
                 <span className="text-gray-400 text-sm">
                   123 Main Road, T. Nagar,<br />Chennai - 600017, Tamil Nadu
                 </span>
               </li>
               <li className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-skm-gold flex-shrink-0" />
+                <Phone className="w-5 h-5 text-skm-red-light flex-shrink-0" />
                 <a
                   href="tel:+919876543210"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
@@ -127,7 +127,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-skm-gold flex-shrink-0" />
+                <Mail className="w-5 h-5 text-skm-red-light flex-shrink-0" />
                 <a
                   href="mailto:info@skmfurniture.com"
                   className="text-gray-400 hover:text-white transition-colors text-sm"

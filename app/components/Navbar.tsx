@@ -40,7 +40,7 @@ export default function Navbar() {
                 className="h-full w-auto object-contain"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
-                  e.currentTarget.parentElement!.innerHTML = '<div class="h-10 w-10 bg-skm-brown rounded flex items-center justify-center text-white font-bold text-lg">S</div>';
+                  e.currentTarget.parentElement!.innerHTML = '<div class="h-10 w-10 bg-skm-red rounded flex items-center justify-center text-white font-bold text-lg">S</div>';
                 }}
               />
             </div>
@@ -52,7 +52,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-semibold text-gray-700 hover:text-skm-brown transition-colors tracking-wide"
+                className="text-sm font-semibold text-gray-700 hover:text-skm-red transition-colors tracking-wide"
               >
                 {link.label}
               </Link>
@@ -87,7 +87,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="block py-2 text-sm font-semibold text-gray-700 hover:text-skm-brown"
+                  className="block py-2 text-sm font-semibold text-gray-700 hover:text-skm-red"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}

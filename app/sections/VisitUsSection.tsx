@@ -39,13 +39,13 @@ export default function VisitUsSection() {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-skm-brown-dark mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-skm-red-dark mb-4">
             Visit Our Showrooms
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Experience our furniture collection in person at any of our conveniently located showrooms
           </p>
-          <div className="w-24 h-1 bg-skm-gold mx-auto mt-6" />
+          <div className="w-24 h-1 bg-skm-red mx-auto mt-6" />
         </div>
 
         {/* Showrooms Grid */}
@@ -53,7 +53,7 @@ export default function VisitUsSection() {
           {showrooms.map((showroom, index) => (
             <div
               key={showroom.name}
-              className="bg-skm-cream rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               {/* Map */}
               <div className="h-48 w-full bg-gray-200 relative">
@@ -71,28 +71,28 @@ export default function VisitUsSection() {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-skm-brown-dark mb-4">
+                <h3 className="text-xl font-bold text-skm-red-dark mb-4">
                   {showroom.name}
                 </h3>
 
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
-                    <MapPin className="w-5 h-5 text-skm-brown mt-0.5 flex-shrink-0" />
+                    <MapPin className="w-5 h-5 text-skm-red mt-0.5 flex-shrink-0" />
                     <p className="text-gray-600 text-sm">{showroom.address}</p>
                   </div>
 
                   <div className="flex items-center space-x-3">
-                    <Phone className="w-5 h-5 text-skm-brown flex-shrink-0" />
+                    <Phone className="w-5 h-5 text-skm-red flex-shrink-0" />
                     <a
                       href={`tel:${showroom.phone.replace(/\s/g, '')}`}
-                      className="text-gray-600 text-sm hover:text-skm-brown transition-colors"
+                      className="text-gray-600 text-sm hover:text-skm-red transition-colors"
                     >
                       {showroom.phone}
                     </a>
                   </div>
 
                   <div className="flex items-center space-x-3">
-                    <Clock className="w-5 h-5 text-skm-brown flex-shrink-0" />
+                    <Clock className="w-5 h-5 text-skm-red flex-shrink-0" />
                     <p className="text-gray-600 text-sm">{showroom.hours}</p>
                   </div>
                 </div>
@@ -101,7 +101,7 @@ export default function VisitUsSection() {
                   href={`https://maps.google.com/?q=${encodeURIComponent(showroom.address)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 flex items-center justify-center space-x-2 text-skm-brown font-semibold hover:text-skm-gold transition-colors"
+                  className="mt-6 flex items-center justify-center space-x-2 text-skm-red font-semibold hover:text-skm-red-light transition-colors"
                 >
                   <span>Get Directions</span>
                   <ExternalLink className="w-4 h-4" />

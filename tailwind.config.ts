@@ -9,13 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'skm-brown': '#8B4513',
-        'skm-brown-dark': '#5D3A1A',
-        'skm-gold': '#D4AF37',
-        'skm-gold-light': '#F4E4BC',
-        'skm-beige': '#F5F5DC',
-        'skm-cream': '#FFFDD0',
-        'skm-warm': '#F5DEB3',
+        'skm-red': '#DC2626',
+        'skm-red-dark': '#991B1B',
+        'skm-red-light': '#EF4444',
+        'skm-white': '#FFFFFF',
+        'skm-gray': '#F3F4F6',
+        'skm-cream': '#FEF2F2',
+        'skm-warm': '#FEE2E2',
       },
       fontFamily: {
         serif: ['Playfair Display', 'Georgia', 'serif'],

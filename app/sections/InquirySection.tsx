@@ -88,7 +88,7 @@ export default function InquirySection() {
   }
 
   return (
-    <section id="contact" className="section-padding bg-gradient-to-br from-skm-brown to-skm-brown-dark">
+    <section id="contact" className="section-padding bg-gradient-to-br from-skm-red to-skm-red-dark">
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -98,7 +98,7 @@ export default function InquirySection() {
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Tell us about your furniture requirements and we'll get back to you within 24 hours
           </p>
-          <div className="w-24 h-1 bg-skm-gold mx-auto mt-6" />
+          <div className="w-24 h-1 bg-skm-red-light mx-auto mt-6" />
         </div>
 
         {/* Form */}
@@ -145,7 +145,7 @@ export default function InquirySection() {
                   className={`w-full px-4 py-3 rounded-lg border-2 transition-colors ${
                     errors.name
                       ? 'border-red-500 focus:border-red-500'
-                      : 'border-gray-200 focus:border-skm-gold'
+                      : 'border-gray-200 focus:border-skm-red'
                   } focus:outline-none`}
                   placeholder="Enter your full name"
                 />
@@ -171,7 +171,7 @@ export default function InquirySection() {
                   className={`w-full px-4 py-3 rounded-lg border-2 transition-colors ${
                     errors.mobile
                       ? 'border-red-500 focus:border-red-500'
-                      : 'border-gray-200 focus:border-skm-gold'
+                      : 'border-gray-200 focus:border-skm-red'
                   } focus:outline-none`}
                   placeholder="Enter 10-digit mobile number"
                   maxLength={10}
@@ -198,7 +198,7 @@ export default function InquirySection() {
                   className={`w-full px-4 py-3 rounded-lg border-2 transition-colors resize-none ${
                     errors.requirement
                       ? 'border-red-500 focus:border-red-500'
-                      : 'border-gray-200 focus:border-skm-gold'
+                      : 'border-gray-200 focus:border-skm-red'
                   } focus:outline-none`}
                   placeholder="Describe what furniture you're looking for, preferred style, budget, etc."
                 />

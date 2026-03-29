@@ -60,7 +60,7 @@ export default function HeroSection() {
   }
 
   // Fallback background gradient if no images
-  const fallbackBg = 'bg-gradient-to-br from-skm-brown via-skm-brown-dark to-gray-900'
+  const fallbackBg = 'bg-gradient-to-br from-skm-red via-skm-red-dark to-gray-900'
 
   return (
     <section id="home" className="relative h-screen w-full overflow-hidden">
@@ -97,14 +97,14 @@ export default function HeroSection() {
           <div className="max-w-2xl">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
               Transform Your Home with{' '}
-              <span className="text-skm-gold">Timeless Comfort</span>
+              <span className="text-skm-red-light">Timeless Comfort</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
               Discover premium furniture crafted with excellence. From elegant sofas to 
               custom bedroom sets, we bring luxury and comfort to every corner of your home.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#showrooms" className="border-2 border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-skm-brown-dark transition-all text-center">
+              <a href="#showrooms" className="border-2 border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-skm-red-dark transition-all text-center">
                 Visit Showroom
               </a>
             </div>
@@ -138,7 +138,7 @@ export default function HeroSection() {
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`w-3 h-3 rounded-full transition-all ${
-                index === currentIndex ? 'bg-skm-gold w-8' : 'bg-white/50'
+                index === currentIndex ? 'bg-skm-red-light w-8' : 'bg-white/50'
               }`}
             />
           ))}

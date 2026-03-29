@@ -20,13 +20,13 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-skm-gold text-skm-brown-dark px-6 py-3 rounded-md font-semibold 
-           hover:bg-skm-gold-light transition-all duration-300 shadow-md;
+    @apply bg-skm-red text-white px-6 py-3 rounded-md font-semibold 
+           hover:bg-skm-red-light transition-all duration-300 shadow-md;
   }
   
   .btn-secondary {
-    @apply bg-skm-brown text-white px-6 py-3 rounded-md font-semibold 
-           hover:bg-skm-brown-dark transition-all duration-300 shadow-md;
+    @apply bg-skm-red-dark text-white px-6 py-3 rounded-md font-semibold 
+           hover:bg-skm-red transition-all duration-300 shadow-md;
   }
   
   .section-padding {
